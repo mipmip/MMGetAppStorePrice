@@ -12,9 +12,9 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        
+
         MMGetAppStorePrice * appPrice = [[MMGetAppStorePrice alloc] initWithAppId:@1075794517];
-        
+
         if([appPrice priceFound]== YES){
             NSString * formattedPrice = [appPrice formattedPrice];
             NSLog(@"price of PDF Letterhead = %@", formattedPrice);
@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
         else{
             NSLog(@"no price found");
         }
-        
+
     }
     return 0;
 }
